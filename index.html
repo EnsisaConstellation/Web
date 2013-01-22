@@ -1,5 +1,16 @@
 <!DOCTYPE html>
 
+<!--
+      ::::::::  :::::::: ::::    ::: ::::::::::::::::::::::::::::::::       :::           ::::::::::::::::::::::::::::::::: ::::    ::: 
+    :+:    :+::+:    :+::+:+:   :+::+:    :+:   :+:    :+:       :+:       :+:         :+: :+:  :+:        :+:   :+:    :+::+:+:   :+:  
+   +:+       +:+    +:+:+:+:+  +:++:+          +:+    +:+       +:+       +:+        +:+   +:+ +:+        +:+   +:+    +:+:+:+:+  +:+   
+  +#+       +#+    +:++#+ +:+ +#++#++:++#++   +#+    +#++:++#  +#+       +#+       +#++:++#++:+#+        +#+   +#+    +:++#+ +:+ +#+    
+ +#+       +#+    +#++#+  +#+#+#       +#+   +#+    +#+       +#+       +#+       +#+     +#++#+        +#+   +#+    +#++#+  +#+#+#     
+#+#    #+##+#    #+##+#   #+#+##+#    #+#   #+#    #+#       #+#       #+#       #+#     #+##+#        #+#   #+#    #+##+#   #+#+#      
+########  ######## ###    #### ########    ###    #################################     ######    ################### ###    ####       
+
+-->
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
@@ -24,7 +35,7 @@
 				<nav>
 					<a href="http://constellation.me/wiki" target="_blank">Wiki</a>
 					<a href="http://constellation.me/blog" target="_blank">Blog</a>
-					<a href="http://constellation.me/contact">Contact</a>
+					<a href="mailto&#58;&#99;ontac%&#55;&#52;&#64;%63onstel%6&#67;a&#116;&#105;&#111;%6E&#46;me">Contact</a>
 				</nav>
 
 				<article>
@@ -41,7 +52,23 @@
 			
 		</div><!-- /page -->
 	<aside><p>Page conçu bénévolement par <a href="http://www.needacoffee.fr">Thomas Alberola</a></aside>
-
+	<script>
+	function showHide(shID) {
+		if (document.getElementById(shID)) {
+			if (document.getElementById(shID+'-show').style.display != 'none') 
+			{
+				document.getElementById(shID+'-show').style.display = 'none';
+				document.getElementById(shID).style.display = 'block';
+			}
+			else 
+			{
+				document.getElementById(shID+'-show').style.display = 'inline';
+				document.getElementById(shID).style.display = 'none';
+			}
+		}
+	}
+		
+	</script>
 	</body>
 
 </html>
