@@ -54,20 +54,24 @@
 		</div><!-- /page -->
 	<aside><p>Page conçu bénévolement par <a href="http://www.needacoffee.fr">Thomas Alberola</a></aside>
 	<script>
-	function showHide(shID) {
-		if (document.getElementById(shID)) {
-			if (document.getElementById(shID+'-show').style.display != 'none') 
-			{
-				document.getElementById(shID+'-show').style.display = 'none';
-				document.getElementById(shID).style.display = 'block';
-			}
-			else 
-			{
-				document.getElementById(shID+'-show').style.display = 'inline';
-				document.getElementById(shID).style.display = 'none';
-			}
+	(function () {
+		if ( window.addEventListener ) {
+			var state2 = 0,
+			konami = [38,38,40,40,37,39,37,39,66,65];
+
+			window.addEventListener("keydown", function(e) {
+				if ( e.keyCode == konami[state2] )
+					state2++;
+				else
+					state2 = 0;
+				if ( state2 == 10 ){
+					window.alert("Bien joué ! Tu as la geekattitude ! :)");
+					state2=0;
+				}
+			}, true);
 		}
-	}
+	}());
+
 		
 	</script>
 	</body>
